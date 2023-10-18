@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "logo": "https://i.ibb.co/fMhSWdw/pngwing-com-8.png",
+      "brand_name": "Burberry"
+    },
+    {
+      "id": 2,
+      "logo": "https://i.ibb.co/3TKbK07/pngwing-com-9.png",
+      "brand_name": "Adidas"
+    },
+    {
+      "id": 3,
+      "logo": "https://i.ibb.co/pnmmNVH/pngwing-com-12.png",
+      "brand_name": "Armani"
+    },
+    {
+      "id": 4,
+      "logo": "https://i.ibb.co/yk2VvT9/pngwing-com-11.png",
+      "brand_name": "Lotto"
+    },
+    {
+      "id": 5,
+      "logo": "https://i.ibb.co/5vPksy2/pngwing-com-7.png",
+      "brand_name": "Nike"
+    },
+    {
+      "id": 6,
+      "logo": "https://i.ibb.co/RpHqCRy/pngwing-com-10.png",
+      "brand_name": "Puma"
+    }
+  ]
+  
