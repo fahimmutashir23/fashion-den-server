@@ -28,7 +28,7 @@ async function run() {
   try {
     await client.connect();
     const fashionCollection = client.db("fashionDB").collection("fashion");
-    // const fashionCollection = client.db("fashionDB").collection("fashion");
+    const fashionCartCollection = client.db("fashionDB").collection("fashionsCart");
    
     app.get("/fashionsBrand", (req, res) => {
         res.send(data)
@@ -40,11 +40,25 @@ async function run() {
         res.send(result)
     })
 
+    app.get("/fashionsCart", async(req, res) => {
+        const cursor = fashionCartCollection.find();
+        const result = await cursor.toArray();
+        res.send(result)
+    })
+
     app.post("/fashions", async(req, res) => {
         const data = req.body;
         const result = await fashionCollection.insertOne(data);
         res.send(result)
     })
+
+    app.post("/fashionsCart", async(req, res) => {
+        const data = req.body;
+        const result = await fashionCartCollection.insertOne(data);
+        res.send(result)
+    })
+
+    
 
     
 
