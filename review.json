@@ -1,0 +1,72 @@
+[
+    {
+        "_id": "1",
+        "name": "John Doe",
+        "photo": "https://i.ibb.co/Vjn1PCY/dragos-gontariu-GH-m-SApo-KO0-unsplash.jpg",
+        "short_review": "Great product! I love it.",
+        "ratings": 5
+    },
+    {
+        "_id": "2",
+        "name": "Alice Smith",
+        "photo": "https://i.ibb.co/CnsTKgj/michael-dam-m-EZ3-Po-FGs-k-unsplash.jpg",
+        "short_review": "Good quality and fast delivery.",
+        "ratings": 4
+    },
+    {
+        "_id": "3",
+        "name": "Ella Johnson",
+        "photo": "https://i.ibb.co/RNbD0N7/linkedin-sales-solutions-w-S73-LE0-Gn-Ks-unsplash.jpg",
+        "short_review": "Impressed with the packaging.",
+        "ratings": 5
+    },
+    {
+        "_id": "4",
+        "name": "David Brown",
+        "photo": "https://i.ibb.co/n1zxr63/bruce-mars-8-YG31-Xn4d-Sw-unsplash.jpg",
+        "short_review": "Not what I expected, but it's okay.",
+        "ratings": 3
+    },
+    {
+        "_id": "5",
+        "name": "Sophia Lee",
+        "photo": "https://i.ibb.co/zRsZ28x/linkedin-sales-solutions-p-At-A8xe-i-VM-unsplash.jpg",
+        "short_review": "Fast shipping, but the product had a scratch.",
+        "ratings": 3
+    },
+    {
+        "_id": "6",
+        "name": "Michael Wilson",
+        "photo": "https://i.ibb.co/Z20Jd0w/austin-distel-7uo-Mmz-Pd2-JA-unsplash.jpg",
+        "short_review": "Excellent customer service!",
+        "ratings": 5
+    },
+    {
+        "_id": "7",
+        "name": "Olivia Davis",
+        "photo": "https://i.ibb.co/JtXYy3Y/Financial-Strategies-Seminar.jpg",
+        "short_review": "Product arrived damaged, not satisfied.",
+        "ratings": 2
+    },
+    {
+        "_id": "8",
+        "name": "James Taylor",
+        "photo": "https://i.ibb.co/kMZ65tW/daria-pimkina-t-Yaccl19-A3-Q-unsplash.jpg",
+        "short_review": "Affordable and good quality.",
+        "ratings": 4
+    },
+    {
+        "_id": "9",
+        "name": "Ava Miller",
+        "photo": "https://i.ibb.co/VqbJGNT/ali-morshedlou-WMD64t-Mfc4k-unsplash.jpg",
+        "short_review": "Perfect fit and stylish design.",
+        "ratings": 5
+    },
+    {
+        "_id": "10",
+        "name": "William Anderson",
+        "photo": "https://i.ibb.co/yPh0S3H/daria-pimkina-Dj5-Hn-HMtk-H0-unsplash.jpg",
+        "short_review": "Great value for the price.",
+        "ratings": 4
+    }
+]

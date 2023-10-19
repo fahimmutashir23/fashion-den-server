@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
-const data = require("./data.json")
+const data = require("./data.json");
+const reviews = require("./review.json")
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 require("dotenv").config()
 const app = express();
@@ -34,9 +35,20 @@ async function run() {
         res.send(data)
     })
 
+    app.get("/reviews", (req, res) => {
+        res.send(reviews)
+    })
+
     app.get("/fashions", async(req, res) => {
         const cursor = fashionCollection.find();
         const result = await cursor.toArray();
+        res.send(result)
+    })
+
+    app.get("/fashions/:id", async(req, res) => {
+        const id = req.params.id;
+        const query = {_id: new ObjectId(id)};
+        const result = await fashionCollection.findOne(query);
         res.send(result)
     })
 
@@ -58,9 +70,28 @@ async function run() {
         res.send(result)
     })
 
+    app.put("/fashions/:id", async(req, res) => {
+        const id = req.params.id;
+        const data = req.body;
+        const filter = {_id: new ObjectId(id)};
+        const options = { upsert : true };
+        const updateProduct = {
+            $set: {
+                name: data.name,
+                brand: data.brand,
+                type: data.type,
+                price: data.price,
+                photo: data.photo,
+                rating: data.rating
+            }
+        }
+        const result = await fashionCollection.updateOne(filter, updateProduct, options);
+        res.send(result)
+    })
+
     app.delete('/fashionsCart/:id', async(req, res) => {
         const id = req.params.id;
-        const query = {_id: (id)};
+        const query = {_id: new ObjectId(id)};
         const result = await fashionCartCollection.deleteOne(query);
         res.send(result)
     })
